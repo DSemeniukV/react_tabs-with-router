@@ -15,18 +15,16 @@ export const App = () => {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link
-              to="/"
+            <div
               className={`navbar-item ${currentPath === '/' ? 'is-active' : ''}`}
             >
-              Home
-            </Link>
-            <Link
-              to="/tabs"
+              <Link to="/">Home</Link>
+            </div>
+            <div
               className={`navbar-item ${currentPath.startsWith('/tabs') ? 'is-active' : ''}`}
             >
-              Tabs
-            </Link>
+              <Link to="/tabs">Tabs</Link>
+            </div>
           </div>
         </div>
       </nav>
