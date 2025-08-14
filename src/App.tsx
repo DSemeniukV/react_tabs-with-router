@@ -14,18 +14,19 @@ export const App = () => {
         data-cy="Nav"
       >
         <div className="container">
-          <div className="navbar-brand">
-            <div
+          <ul className="navbar-start">
+            <li
               className={`navbar-item ${currentPath === '/' ? 'is-active' : ''}`}
             >
               <Link to="/">Home</Link>
-            </div>
-            <div
+            </li>
+
+            <li
               className={`navbar-item ${currentPath.startsWith('/tabs') ? 'is-active' : ''}`}
             >
               <Link to="/tabs">Tabs</Link>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </nav>
       <Outlet />
